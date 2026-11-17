@@ -1,0 +1,42 @@
+{
+  "name": "dsh-has-stripper",
+  "version": "0.1.0",
+  "description": "Remove :has() selector rules at runtime to keep style invalidation local on very large transcripts.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SUZUNAMI/dsh-has-stripper.git"
+  },
+  "homepage": "https://github.com/SUZUNAMI/dsh-has-stripper#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "css",
+    "performance"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}

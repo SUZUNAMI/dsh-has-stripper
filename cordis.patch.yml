@@ -1,0 +1,4 @@
+# dsh bundle patch: insert the client-only :has() rule stripper.
+- insert:
+    - id: dsh-has-stripper
+      name: 'dsh-has-stripper'
